@@ -7,11 +7,13 @@ body {
 .main {
     display: block;
     margin: auto;
+    position: relative;
     width: fit-content;
     height: fit-content;
     background-color: rgb(49,49,49);
     padding: 12px 32px;
     min-width: 60%;
+    padding-bottom: 40px;
 }
 .main .version {
     text-align: center;
@@ -56,4 +58,15 @@ body {
 
 hr {
     border: 1px solid grey;
+}
+
+.main .privacy_policy_link {
+    display: block;
+    margin: auto;
+    position: absolute;
+    width: fit-content;
+    left:0;right:0;
+    bottom: 5px;
+    color: grey;
+    font-size: 14px;
 }
