@@ -18,7 +18,7 @@ body {
 .main .version {
     text-align: center;
 }
-.main h1 {
+.main h1, .main h3 {
     text-align: center;
 }
 
@@ -70,3 +70,26 @@ hr {
     color: grey;
     font-size: 14px;
 }
+
+.main .updates .list {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.main .updates .list .note {
+    display: block;
+    margin: auto;
+    text-align: justify;
+    cursor: default;
+}
+.main .updates .list .note .note_type {
+    padding: 1px 6px;
+    border-radius: 2px;
+}
+
+.main .updates .list .note .note_type.fix { background-color: rgb(0, 153, 255); }
+.main .updates .list .note .note_type.addition { background-color: green; }
+.main .updates .list .note .note_type.removal { background-color: grey; }
+.main .updates .list .note .note_type.adjustment { background-color: yellow; color: black; }
+.main .updates .list .note .note_type.publish { background-color: rgb(121, 97, 255); }
