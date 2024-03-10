@@ -94,7 +94,7 @@ hr {
 .main .updates .list .note .note_type.adjustment { background-color: yellow; color: black; }
 .main .updates .list .note .note_type.publish { background-color: rgb(121, 97, 255); }
 
-.description_seperator, .next_version_seperator { display: none; }
+.description_seperator, .next_version_seperator, .known_issues_seperator, .known_issues { display: none; }
 
 .next_version_info {
     color: white;
@@ -120,3 +120,25 @@ hr {
     height: 100%;
     background-color: green;
 }
+
+.main .known_issues .list {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.main .known_issues .issue {
+    display: block;
+    margin: auto;
+    text-align: justify;
+    cursor: default;
+}
+
+.update_severity {
+    padding: 1px 6px;
+    border-radius: 2px;
+}
+.update_severity.small { background-color: green; }
+.update_severity.medium { background-color: rgb(106, 54, 228); }
+.update_severity.large { background-color: rgb(173, 35, 35); }
+.update_severity.priority { background-color: red; }

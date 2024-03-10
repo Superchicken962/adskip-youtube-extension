@@ -43,6 +43,30 @@ function updateUpdates() {
         `;
     }
 
+    if (currentVersion.Issues && currentVersion.Issues.length > 0) {
+        const knownIssuesDiv = document.querySelector(".main .known_issues");
+        document.querySelector(".main .known_issues_seperator").style.display = "block";
+        knownIssuesDiv.style.display = "block";
+
+        const knownIssuesList = knownIssuesDiv.querySelector(".list");
+
+        for (const issue of currentVersion.Issues) {
+            let issueElement = document.createElement("div");
+            issueElement.className = "issue";
+
+            let issueSeverity = UPDATE_ISSUE_SEVERITY[issue.severity];
+
+            issueElement.innerHTML = `
+                <p>
+                    <span class="update_severity ${issueSeverity.name.toLowerCase()}">${issueSeverity.name}</span> ${issue.note}
+                </p>
+            `;
+
+            knownIssuesList.appendChild(issueElement);
+        }
+
+    }
+
     for (const note of currentVersion.Notes) {
         let noteDiv = document.createElement("div");
         noteDiv.className = "note";
@@ -51,7 +75,7 @@ function updateUpdates() {
 
         noteDiv.innerHTML = `
         <p>
-        <span class="note_type ${noteType}">${capitalise(noteType)}</span> ${note.note}
+            <span class="note_type ${noteType}">${capitalise(noteType)}</span> ${note.note}
         </p>
         `;
 
