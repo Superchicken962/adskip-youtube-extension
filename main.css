@@ -93,3 +93,30 @@ hr {
 .main .updates .list .note .note_type.removal { background-color: grey; }
 .main .updates .list .note .note_type.adjustment { background-color: yellow; color: black; }
 .main .updates .list .note .note_type.publish { background-color: rgb(121, 97, 255); }
+
+.description_seperator, .next_version_seperator { display: none; }
+
+.next_version_info {
+    color: white;
+    text-align: center;
+}
+
+.next_version_info .completion_progress {
+    display: inline-block;
+    margin: auto;
+    width: 120px;
+    height: 14px;
+    margin-top: 2.5px;
+    vertical-align: top;
+    background-color: black;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.next_version_info .completion_progress .bar {
+    display: block;
+    margin: auto;
+    float: left;
+    width: 0;
+    height: 100%;
+    background-color: green;
+}
