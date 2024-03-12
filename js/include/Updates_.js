@@ -14,8 +14,8 @@ const UPDATES = {
         PlannedFeatures: [],
         NextUpdate: {
             version: "1.1.0",
-            progress: 95,
-            note: "Almost done! Final reviews and testing in progress!"
+            progress: 99,
+            note: "Waiting for review..."
         }
     }
 };
