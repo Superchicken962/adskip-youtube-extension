@@ -11,7 +11,7 @@ const UPDATES = {
             { type: "addition", note: "Sped up ads should now count as 'skipped ads' and contribute points to your rank" },
             { type: "addition", note: "Added new visuals below video to indicate ads skipped (toggleable)" },
             { type: "addition", note: "Added new button next to title to try and fix ads not skipping properly when clicked!" },
-            { type: "addition", note: "Added leaderboard where you can compare your stats to others" },
+            { type: "addition", note: "Save your stats to the server, and eventually compare to other ad skippers!" },
             { type: "fix", note: "Properly aligned checkboxes to labels in extension window" },
             { type: "adjustment", note: "Adjusted amount of skips needed to reach some ranks to account for ads sped up" }
         ],
