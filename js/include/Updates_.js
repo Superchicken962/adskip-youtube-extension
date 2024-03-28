@@ -19,10 +19,16 @@ const UPDATES = {
             { severity: "0", note: "Ad skipped visual may sometimes show up in weird places or not at all" },
             { severity: "0", note: "Ad skipping still may not work sometimes, however should be resolved by clicking the new fix button" },
             { severity: "2", note: "Fix button does not seem to actually fix anything, currently reloading the page is the best fix" },
+            { severity: "2", note: "Data storing server side may not be working properly" }
         ],
         PlannedFeatures: [
             { type: "improvement", note: "UI Improvements", reliability: 50 },
-        ]
+        ],
+        NextUpdate: {
+            version: "1.1.1",
+            progress: 0,
+            note: "Not started"
+        }
     },
     "1.0.0": {
         Version: "1.0.0",
