@@ -16,6 +16,7 @@ const UPDATES = {
             { type: "adjustment", note: "Adjusted amount of skips needed to reach some ranks to account for ads sped up" }
         ],
         Issues: [
+            { severity: "1", note: "Ads may be sped up instead of skipped when a skip button is clearly shown" },
             { severity: "0", note: "Ad skipped visual may sometimes show up in weird places or not at all" },
             { severity: "0", note: "Ad skipping still may not work sometimes, however should be resolved by clicking the new fix button" },
             { severity: "2", note: "Fix button does not seem to actually fix anything, currently reloading the page is the best fix" },
@@ -23,7 +24,12 @@ const UPDATES = {
         ],
         PlannedFeatures: [
             { type: "improvement", note: "UI Improvements", reliability: 50 },
-        ]
+        ],
+        NextUpdate: {
+            version: "1.2.0",
+            progress: 0,
+            note: "Planning"
+        }
     },
     "1.0.0": {
         Version: "1.0.0",
