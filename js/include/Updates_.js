@@ -19,7 +19,7 @@ const UPDATES = {
         }
     },
     "1.1.0": {
-        Date: "12/03/2024",
+        Date: "13/03/2024",
         Version: "1.1.0",
         Description: "<p>The long awaited update!<br><br>Unfortunately, I cannot guarentee that all bugs have been 100% fixed, but I can say that I have applied some fixes which will hopefully fix, or reduce the likelihood of them occuring.</p><p>Please be sure to report any bugs and issues and I will try to fix them! Any bugs I know of will be listed down below!</p>",
         UpdateType: "major",
@@ -46,6 +46,7 @@ const UPDATES = {
         ]
     },
     "1.0.0": {
+        Date: "18/01/2024",
         Version: "1.0.0",
         Description: `<br>v1.1.0 Coming Soon!!<br>Thank you for your patience!<br><br>`,
         UpdateType: "release",
@@ -60,8 +61,8 @@ const UPDATES = {
         PlannedFeatures: [],
         NextUpdate: {
             version: "1.1.0",
-            progress: 99,
-            note: "Waiting for review..."
+            progress: 100,
+            note: "Released!"
         }
     }
 };

@@ -28,10 +28,16 @@ body {
     text-align: center;
 }
 .add_button .version {
-    padding: 5px 10px;
+    padding: 5px 6px;
     border-radius: 4px;
     background-color: rgb(61, 179, 61);
-    border: 3px solid none;
+    /* border: 3px solid none; */
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    vertical-align: middle;
+    position: relative;
 }
 .button {
     display: inline-block;
