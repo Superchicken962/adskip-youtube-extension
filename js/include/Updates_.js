@@ -1,4 +1,23 @@
 const UPDATES = {
+    "1.1.1": {
+        Date: "07/05/2024",
+        Version: "1.1.1",
+        Description: "<p>Skippable ads should now properly be skipped.</p><p>Saving stats to server has been disabled temporarily until a fix is found.</p>",
+        UpdateType: "hotfix",
+        Notes: [
+            { type: "fix", note: "Fixed ads not being skipped when the skip button is clearly shown" }
+        ],
+        Issues: [
+            { severity: "0", note: "Ad skipped visual may sometimes show up in weird places or not at all" },
+            { severity: "0", note: "Ad skipping still may not work sometimes, however should be resolved by clicking the new fix button" },
+            { severity: "2", note: "Fix button does not seem to actually fix anything, currently reloading the page is the best fix" },
+        ],
+        NextUpdate: {
+            version: "1.2.0",
+            progress: 0,
+            note: "Planning"
+        }
+    },
     "1.1.0": {
         Date: "12/03/2024",
         Version: "1.1.0",
@@ -24,12 +43,7 @@ const UPDATES = {
         ],
         PlannedFeatures: [
             { type: "improvement", note: "UI Improvements", reliability: 50 },
-        ],
-        NextUpdate: {
-            version: "1.2.0",
-            progress: 0,
-            note: "Planning"
-        }
+        ]
     },
     "1.0.0": {
         Version: "1.0.0",
