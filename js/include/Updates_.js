@@ -8,6 +8,7 @@ const UPDATES = {
             { type: "fix", note: "Fixed ads not being skipped when the skip button is clearly shown" }
         ],
         Issues: [
+			{ severity: "2", note: "Ads are sped up, but the skip button may not work anymore."},
             { severity: "0", note: "Ad skipped visual may sometimes show up in weird places or not at all" },
             { severity: "0", note: "Ad skipping still may not work sometimes, however should be resolved by clicking the new fix button" },
             { severity: "2", note: "Fix button does not seem to actually fix anything, currently reloading the page is the best fix" },
