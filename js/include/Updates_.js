@@ -1,4 +1,23 @@
 const UPDATES = {
+    "1.1.2": {
+        Date: "10/09/2024",
+        Version: "1.1.2",
+        Description: "<p>The extension properly clicks the skip button again, and the fix adskipper button finally works.</p>",
+        UpdateType: "hotfix",
+        Notes: [
+            { type: "fix", note: "Fixed the extension not clicking the skip button" },
+            { type: "fix", note: "Fixed the 'fix adskipper' button - now it should fix the detected issue when clicked" }
+        ],
+        Issues: [
+            { severity: "0", note: "Ad skipped visual may sometimes show up in weird places or not at all" },
+            { severity: "0", note: "Extension may sometimes not \"hook\" to the video, although this can be fixed by clicking the fix adskipper button" }
+        ],
+        // NextUpdate: {
+        //     version: "1.2.0",
+        //     progress: 0,
+        //     note: "Planning"
+        // }
+    },
     "1.1.1": {
         Date: "07/05/2024",
         Version: "1.1.1",
@@ -12,17 +31,12 @@ const UPDATES = {
             { severity: "0", note: "Ad skipped visual may sometimes show up in weird places or not at all" },
             { severity: "0", note: "Ad skipping still may not work sometimes, however should be resolved by clicking the new fix button" },
             { severity: "2", note: "Fix button does not seem to actually fix anything, currently reloading the page is the best fix" },
-        ],
-        NextUpdate: {
-            version: "1.2.0",
-            progress: 0,
-            note: "Planning"
-        }
+        ]
     },
     "1.1.0": {
         Date: "13/03/2024",
         Version: "1.1.0",
-        Description: "<p>The long awaited update!<br><br>Unfortunately, I cannot guarentee that all bugs have been 100% fixed, but I can say that I have applied some fixes which will hopefully fix, or reduce the likelihood of them occuring.</p><p>Please be sure to report any bugs and issues and I will try to fix them! Any bugs I know of will be listed down below!</p>",
+        Description: "<p>The long awaited update!<br><br>Unfortunately, I cannot guarantee that all bugs have been 100% fixed, but I can say that I have applied some fixes which will hopefully fix, or reduce the likelihood of them occuring.</p><p>Please be sure to report any bugs and issues and I will try to fix them! Any bugs I know of will be listed down below!</p>",
         UpdateType: "major",
         Notes: [
             { type: "fix", note: "Fixed playback rate not changing back to normal after speeding up an ad" },
