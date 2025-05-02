@@ -94,6 +94,10 @@ function updateUpdates(e, specific_version) {
 
     }
 
+    // Hide "what's new" if no notes.
+    updatesList.parentElement.style.display = (currentVersion.Notes.length === 0) ? "none" : "block";
+    document.querySelector(".updates_separator").style.display = (currentVersion.Notes.length === 0) ? "none" : "block";
+
     for (const note of currentVersion.Notes) {
         let noteDiv = document.createElement("div");
         noteDiv.className = "note";
@@ -101,9 +105,9 @@ function updateUpdates(e, specific_version) {
         let noteType = note.type?.toLowerCase();
 
         noteDiv.innerHTML = `
-        <p>
-            <span class="note_type ${noteType}">${capitalise(noteType)}</span> ${note.note}
-        </p>
+            <p>
+                <span class="note_type ${noteType}">${capitalise(noteType)}</span> ${note.note}
+            </p>
         `;
 
         updatesList.appendChild(noteDiv);

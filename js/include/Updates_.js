@@ -1,4 +1,14 @@
 const UPDATES = {
+    "1.1.3": {
+        Date: "02/05/2025",
+        Version: "1.1.3",
+        Description: "<p>It has certainly been a while since the last update, however this is not much of one. Some small adjustments were made to <i>hopefully</i> improve ad skipping a bit.</p>",
+        UpdateType: "tiny",
+        Notes: [],
+        Issues: [
+            { severity: "0", note: "Ads skipped indicator may sometimes show up in weird places or not at all" }
+        ]
+    },
     "1.1.2": {
         Date: "10/09/2024",
         Version: "1.1.2",
